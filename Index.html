@@ -1,88 +1,66 @@
-:root{
-    --primary-color: #008b25;
-    --secondary-color: #f4f4f4;
-    --input-border: #ffffff;
-    --attention-color: #110796;
-    --font-color: #333;
-    --gradiente-azul:linear-gradient(45deg,#07ac30fb ,#02532755 );
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Portfólio</title>
+  <link rel ="stylesheet" href="style.css">
+  
+</head>
+<body>
+    <!-- aqui fica a barra de Menu -->
+    <header class="menu-bar">
+        <div>
+            <h2> Logo</h2>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="#biografia">Biografia</a>
+                </li>
+                <li>
+                    <a href="#contato">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+        <section id="biografia" class="biografia">
+        <h1>Fabiano Santana Melo</h1>
+        <p>Desenvolvedor Front-End em formação</p>
+        <div class="container">
+           <div>
+               <h2>Sobre mim</h2>
+               <p>Um pequeno texto sobre mim</p>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse congue est dapibus, tempor diam accumsan, aliquam quam. Curabitur a rhoncus magna. Sed vulputate turpis non est vulputate efficitur. Curabitur sem nulla, finibus vitae posuere in, facilisis a mauris. Nulla cursus quis est non laoreet. Curabitur nulla urna, pulvinar eget leo vitae, aliquet consequat neque. Nullam lobortis eu dui sed bibendum. Suspendisse nec quam pharetra, pulvinar ipsum vel, finibus lectus. Vivamus placerat facilisis enim, et aliquam mi scelerisque nec. Quisque et felis ex. Phasellus dignissim in ex ac ornare. Phasellus ante tortor, placerat ultricies laoreet id, semper vel ante. Sed non faucibus est, nec facilisis leo. Curabitur sit amet urna metus.</p>
+            </div>
+            
+            <img src="https://i.pinimg.com/736x/77/fe/47/77fe47ee41f5317f1a57351a3a377e19.jpg" alt="Foto de Fulano de Tal">
 
+        </div>
+    </section>
+    <section id="contato">
+        <div class="contato-form">
+            <h2>Contato</h2>
+            <p>Voce pode me encontrar nas seguintes redes sociais</p>
+            <form id="contact-form" action="">
+            <input id="input-nome" type="text" placeholder="Seu nome">
+            <input type="email" placeholder="Seu email">
+            <textarea placeholder="Sua mensagem"></textarea>
+            <button id="btn-enviar" type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+        <footer></footer>
+    <script src="script.js"></script>
+</body>
+<body>
+<section id="biografia" class="biografia">
+        <h1>Meus Portfolios</h1>
 
-}
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--secondary-color);
-}
-.menu-bar{
-    background-image: var(--gradiente-azul);
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 30px;
-    align-items: center;
-    & h2{
-        color: var(--secondary-color);
-    }
-}
-.menu{
-    justify-content: space-around;
-    & ul{
-        list-style: none;
-        display: flex;
-        gap: 20px;
-        & a{
-            text-decoration: none;
-            color: var(--secondary-color);
-            font-size: 20px;
-            font-weight: bold;
-            border: solid 2px var(--secondary-color);
-            padding: 10px;
-            border-radius: 30px;
-            box-shadow: 1px 2px 10px rgba(255,255,255,0.2);
-            transition: all 0.3s ease;
-            &:hover{
-                background-color: var(--secondary-color);
-                color: var(--primary-color);;
-                box-shadow: 1px 2px 10px rgba(189, 20, 20, 0.2);
-            }
-        }
-    }
-}
-.biografia{
-    text-align: center;
-    margin: 0 auto;
-    padding: 10px;
-    & h1{
-        color: var(--primary-color);
-        font-size: 40px;
-        margin-bottom: 0;
-    }
-    & p{
-        color: var(--attention-color)
-    }   
-}
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 0 150px;
-    & h2{
-       text-align: start;
-        padding: 5px 50px;
-    }
-    & p{
-        padding: 5px 50px;
-        text-align: justify;
-    }
-    & img{
-        height: 20vw;
-        border-radius: 50%;
-        box-shadow: 1px 2px 10px rgba(0,0,0,0.2);
-    }
-}
-    .sombra-suave {
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-         body {
+</body>
+<body>
+     <style>
+        body {
             margin: 0;
             padding: 20px;
             font-family: 'Arial', sans-serif;
@@ -237,23 +215,45 @@ body {
         .codigo-exemplo code {
             color: #ffd700;
         }
-        .contato-form{
-           margin: 10px auto;
-           padding: 30px;
-           border: solid 1px var(--primary-color);
-           width: 40%;
-           text-align: center;
-           border-radius: 10px;
-           box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
-           margin-bottom: 100px;
-          & form {
-               display: flex;
-               flex-direction: column;
-               gap: 10px;
-               & input{
-                border:solid 1px var(--input-border-color);
-                padding: 10px;
-                border-radius: 10 px;
-
-               }
-        } }
+        
+    </style>
+</head>
+<body>
+            
+        <div class="cartoes-grid">
+            <div class="cartao sombra-suave">
+               
+                <h3>Portfolio 1</h3>
+                <p>Projeto Criado usando HTML </p>
+                <div class="codigo">
+                <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_256.png" alt="Imagem do Projeto">
+                </div>
+            </div>
+            
+            <div class="cartao sombra-media">
+                
+                <h3>Portfolio 2</h3>
+                <p>Projeto Criado usando HTML</p>
+                <div class="codigo">
+                <img src="https://cdn-icons-png.freepik.com/256/919/919826.png" alt="Imagem do Projeto">
+                    
+                </div>
+            </div>
+            
+            <div class="cartao sombra-forte">
+                
+                <h3>Portfolio 3</h3>
+                <p>Projeto Criado usando HTML e CSS</p>
+                <div class="codigo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRE102wUkn1cFzhxibfIUklA358hyLOPjMIA&s" alt="Imagem do Projeto">
+                    
+                </div>
+            </div>
+            
+            
+        </div>
+        
+        
+    
+</body>
+</html>
