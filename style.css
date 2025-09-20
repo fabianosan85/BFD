@@ -237,7 +237,7 @@ body {
         .codigo-exemplo code {
             color: #ffd700;
         }
-        .contato-form{
+        .contact-form{
            margin: 10px auto;
            padding: 30px;
            border: solid 1px var(--primary-color);
